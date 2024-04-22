@@ -1,12 +1,21 @@
-// Props => Is a way of adding properties to components
-/* The difference between props and parameters is that 
-    props are passed to components while parameters are passed to regular functions.
-*/
+// Destructuring props allow us to write clean and precise code
 
-function Hello(props) {
+// First way of destructuring props
+
+// function Hello(props) {
+//     const {name, message} = props;
+//     return (
+//         <div>
+//             <h3>{message} {name}</h3>
+//         </div>
+//     );
+// }
+
+// Second way of destructuring props
+function Hello({name, message}) {
     return (
         <div>
-            <h3>{props.message} { props.name }</h3>
+            <h3>{message} {name}</h3>
         </div>
     );
 }
