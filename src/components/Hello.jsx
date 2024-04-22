@@ -1,22 +1,12 @@
-// JSX => stands for Javascript synatx, is way of combining javascript and html syntax
-// JSX Role
-// JSX can only return one content except they are wrapped in an enclosing tag i.e <div></div> 
+// Props => Is a way of adding properties to components
+/* The difference between props and parameters is that 
+    props are passed to components while parameters are passed to regular functions.
+*/
 
-// const name = "Jones Doe";
-
-function greeting() {
-    return 'How is react js??'
-}
-
-// function Hello() {
-//     return <h2>Hello World, from components,  {greeting()}</h2>
-// }
-
-function Hello() {
+function Hello(props) {
     return (
         <div>
-            <h2>Hello World, from components,  {greeting()}</h2>
-            <h3>This is nice place to be!</h3>
+            <h3>{props.message} { props.name }</h3>
         </div>
     );
 }
