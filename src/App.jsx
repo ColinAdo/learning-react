@@ -4,7 +4,9 @@ function App() {
 
   return (
     <div className="App">
-      <Hello />
+      <Hello message="Hi" name="Deluxe" />
+      <Hello message="Hello" name="Suzi" />
+      <Hello message="Morning " name="Catee" />
     </div>
   )
 }

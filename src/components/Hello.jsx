@@ -1,22 +1,21 @@
-// JSX => stands for Javascript synatx, is way of combining javascript and html syntax
-// JSX Role
-// JSX can only return one content except they are wrapped in an enclosing tag i.e <div></div> 
+// Destructuring props allow us to write clean and precise code
 
-// const name = "Jones Doe";
+// First way of destructuring props
 
-function greeting() {
-    return 'How is react js??'
-}
-
-// function Hello() {
-//     return <h2>Hello World, from components,  {greeting()}</h2>
+// function Hello(props) {
+//     const {name, message} = props;
+//     return (
+//         <div>
+//             <h3>{message} {name}</h3>
+//         </div>
+//     );
 // }
 
-function Hello() {
+// Second way of destructuring props
+function Hello({name, message}) {
     return (
         <div>
-            <h2>Hello World, from components,  {greeting()}</h2>
-            <h3>This is nice place to be!</h3>
+            <h3>{message} {name}</h3>
         </div>
     );
 }
