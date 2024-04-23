@@ -1,12 +1,14 @@
-import Hello from './components/Hello';
+import Fruits from './components/Fruits';
+import Store from './components/Store';
+import Students from './components/Students';
 
 function App() {
 
   return (
     <div className="App">
-      <Hello message="Hi" name="Deluxe" />
-      <Hello message="Hello" name="Suzi" />
-      <Hello message="Morning " name="Catee" />
+      <Fruits />
+      <Store />
+      <Students />
     </div>
   )
 }
