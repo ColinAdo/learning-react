@@ -1,5 +1,6 @@
 import Fruits from './components/Fruits';
 import Store from './components/Store';
+import Students from './components/Students';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Fruits />
       <Store />
+      <Students />
     </div>
   )
 }
