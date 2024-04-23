@@ -1,11 +1,8 @@
-// Working with passing array and objects props to a component
-function Hello({person}) {
+function Hello() {
     return (
         <div>
-            {/* <h3>My nick names are: {nickNames}</h3> */}
-            <h4>{person.name}</h4>
-            <h4>{person.age}</h4>
-            <h4>{person.phoneNumbers}</h4>
+            <h4>Hello there</h4>
+           
         </div>
     );
 }
