@@ -1,12 +1,12 @@
 import Hello from './components/Hello';
 
 function App() {
-
+  {/* Passing array t component */}
+  const nickNames = ['Deluxe', 'Sam'];
+  
   return (
     <div className="App">
-      <Hello message="Hi" name="Deluxe" />
-      <Hello message="Hello" name="Suzi" />
-      <Hello message="Morning " name="Catee" />
+      <Hello nickNames={nickNames} />
     </div>
   )
 }

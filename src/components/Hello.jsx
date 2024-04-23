@@ -1,21 +1,8 @@
-// Destructuring props allow us to write clean and precise code
-
-// First way of destructuring props
-
-// function Hello(props) {
-//     const {name, message} = props;
-//     return (
-//         <div>
-//             <h3>{message} {name}</h3>
-//         </div>
-//     );
-// }
-
-// Second way of destructuring props
-function Hello({name, message}) {
+// Working with passing array and objects props to a component
+function Hello(props) {
     return (
         <div>
-            <h3>{message} {name}</h3>
+            <h3>My nick names are: {props.nickNames}</h3>
         </div>
     );
 }
