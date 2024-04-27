@@ -1,3 +1,8 @@
 export default function Student({name, marks}) {
-    return <div>{name} {marks}</div>;
+    return (
+        // Using skeleton div
+        <> 
+            {marks > 350 ? <li><h2>{name} {marks} marks</h2></li> : ""}
+        </>
+    );
 }
