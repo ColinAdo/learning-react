@@ -1,12 +1,12 @@
 import Condition from './components/Condition';
-import ConditionalComponent from './components/ConditionalElement';
+import ConditionalTernary from './components/ConditionalTernary';
 
 
 function App() {
 
   return (
     <div className="App">
-      <ConditionalComponent />
+      <ConditionalTernary />
       <Condition />
     </div>
   )
