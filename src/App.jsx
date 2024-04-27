@@ -1,5 +1,5 @@
 import Condition from './components/Condition';
-import ConditionalComponent from './components/ConditionalComponent';
+import ConditionalComponent from './components/ConditionalElement';
 
 
 function App() {
