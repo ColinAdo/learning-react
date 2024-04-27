@@ -1,14 +1,13 @@
-import Fruits from './components/Fruits';
-import Store from './components/Store';
-import Students from './components/Students';
+import Condition from './components/Condition';
+import ConditionalComponent from './components/ConditionalComponent';
+
 
 function App() {
 
   return (
     <div className="App">
-      <Fruits />
-      <Store />
-      <Students />
+      <ConditionalComponent />
+      <Condition />
     </div>
   )
 }
