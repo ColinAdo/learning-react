@@ -1,13 +1,11 @@
-import Condition from './components/Condition';
-import ConditionalTernary from './components/ConditionalTernary';
+import Message from "./components/Message"
 
 
 function App() {
 
   return (
     <div className="App">
-      <ConditionalTernary />
-      <Condition />
+      <Message />
     </div>
   )
 }
