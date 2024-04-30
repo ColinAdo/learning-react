@@ -15,19 +15,34 @@ import { useState } from "react"
 
 export default function Counter() {
     const [count, setCount] = useState(0);
+    // Handling multiple states 
+    const [incrementBy, setIncrementBy] = useState(1);
+
 
     function increment() {
-        setCount(count + 1);
+        setCount(count + incrementBy);
     }
 
     function decrement() {
-        setCount(count - 1);
+        setCount(count - incrementBy);
+    }
+
+    function IncreaseIncrement() {
+        setIncrementBy(incrementBy + 1);
+    }
+
+    function DecreaseIncrement() {
+        setIncrementBy(incrementBy - 1);
     }
     return (
         <div>
             <h3>The count number is: {count}</h3>
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>Decrement</button>
+
+            <h3>We are incrementing or decrementing by: {incrementBy}</h3>
+            <button onClick={IncreaseIncrement}>Increase Increment</button>
+            <button onClick={DecreaseIncrement}>Decrease Increment</button>
         </div>
     )
 }
